@@ -18,7 +18,7 @@ const Labs = () => {
       title: "Robotics & Artificial Intelligence Lab",
       description: "Industrial robotic arms, collaborative cobots, pick-and-place cells, machine vision systems, AI programming, and intelligent automation training for advanced roles.",
       level: "Advanced / Research Grade",
-      image: "https://images.unsplash.com/photo-1581093458793-5e1f0e8d3f3d?auto=format&fit=crop&q=80&w=1200"
+      image: "https://xavo.com/hs-fs/hubfs/figure1_lab_automation_robotics.png?width=908&height=518&name=figure1_lab_automation_robotics.png"
     },
     {
       title: "IIoT & Smart Manufacturing Innovation Lab",
@@ -30,7 +30,7 @@ const Labs = () => {
       title: "CNC Simulation & Advanced Machining Lab",
       description: "CNC programming, G-code/M-code, machining simulation, process planning, and digital manufacturing training aligned with modern precision engineering.",
       level: "Engineering / University",
-      image: "https://images.unsplash.com/photo-1581092162387-4c423ca9c7d5?auto=format&fit=crop&q=80&w=1200"
+      image: "https://tech-labs.com/sites/default/files/product_images/APT-Advanced-Manufacturing-MTEC-SIM-2.jpg"
     }
   ];
 

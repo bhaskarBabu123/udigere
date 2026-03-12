@@ -30,7 +30,7 @@ const Training = () => {
       mode: "Offline",
       certification: "Advanced Certification",
       highlights: ["Industrial Robotics", "Cobots", "Machine Vision", "AI in Automation", "Pick & Place Systems"],
-      image: "https://images.unsplash.com/photo-1561144443-f546f0016140?auto=format&fit=crop&q=80&w=1200"
+      image: "https://kanerika.com/wp-content/uploads/2024/08/ai-in-robotics-1.png"
     },
     {
       title: "CNC Programming & Simulation",
@@ -46,7 +46,7 @@ const Training = () => {
       mode: "Hybrid",
       certification: "Professional Certificate",
       highlights: ["CPS", "Digital Twins", "Human-Machine Collaboration", "Smart Factory"],
-      image: "https://images.unsplash.com/photo-1581092162387-4c423ca9c7d5?auto=format&fit=crop&q=80&w=1200"
+      image: "https://www.amlsheffield.co.uk/wp-content/uploads/2024/01/shutterstock_2216343285-1080x675.jpg"
     },
     {
       title: "VFD, Drives & Motion Control",

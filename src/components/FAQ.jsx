@@ -10,7 +10,7 @@ const FAQ = ({ title = "Frequently Asked Questions", faqs = [] }) => {
 
   return (
     <section className="py-16 bg-slate-50">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-0">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-semibold text-slate-900 mb-3">{title}</h2>
           <div className="w-16 h-1 bg-indigo-600 mx-auto mb-4"></div>

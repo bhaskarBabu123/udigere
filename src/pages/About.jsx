@@ -32,7 +32,7 @@ const About = () => {
     {
       title: "Quality Systems & ISO Consulting",
       desc: "ISO 9001, 14001, 45001 Implementation, Auditing & Certification Support",
-      bg: "https://images.unsplash.com/photo-1581092162387-4c423ca9c7d5?auto=format&fit=crop&q=80&w=1200"
+      bg: "https://qualitasqa.com/wp-content/uploads/2025/06/quality-assurance-standard-warranty-iso-quality-certification-concept-standards-min-scaled.jpg"
     },
     {
       title: "Testing & Calibration Services",
@@ -42,7 +42,7 @@ const About = () => {
     {
       title: "Advanced Skill Innovation Labs",
       desc: "Hands-on training in Automation, Robotics, IIoT, CNC, AI for ITI to Engineering",
-      bg: "https://images.unsplash.com/photo-1581093458793-5e1f0e8d3f3d?auto=format&fit=crop&q=80&w=1200"
+      bg: "https://www.techyguide.in/wp-content/uploads/2025/03/CSL_0000_9bcb9a9c-b0b4-46ae-ab86-0de53d8780ff.jpg.jpg"
     }
   ];
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Cpu, Activity, LayoutGrid } from 'lucide-react';
+import { Menu, X, ChevronDown, Cpu, Activity, LayoutGrid, LucideMenu } from 'lucide-react';
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -115,7 +115,7 @@ const Header = () => {
             onClick={() => setIsDrawerOpen(true)}
             className="lg:hidden p-2 text-slate-700 hover:text-indigo-700"
           >
-            <LayoutGrid className="w-8 h-8" />
+            <LucideMenu className="w-8 h-8" />
           </button>
         </div>
       </header>

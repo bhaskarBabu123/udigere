@@ -115,32 +115,32 @@ const Home = () => {
               {
                 title: "Industrial Automation",
                 desc: "PLC, SCADA, HMI, VFD, robotics integration and control panel design.",
-                bg: "https://images.unsplash.com/photo-1581092160560-7d4a0d8a6d5e?auto=format&fit=crop&q=80&w=800"
+                bg: "https://ibtinc.com/wp-content/uploads/2024/07/Industrial-automation-future-trends.jpg"
               },
               {
                 title: "Industry 4.0 / 5.0",
                 desc: "IIoT, Cyber Physical Systems, smart factory consulting & implementation.",
-                bg: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6da?auto=format&fit=crop&q=80&w=800"
+                bg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIBI7hY0X1NPbIflLQvr1NRNy-Kl0-efqfOGYCtgZJA06n2n15VRQWB3_TLpe4X1rLHSg&usqp=CAU"
               },
               {
                 title: "MSME Consulting",
                 desc: "Lean Manufacturing, ZED certification, digitization & productivity improvement.",
-                bg: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+                bg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3pfkJujPz0237JuChmPSFvF75E8QSodAxQ&s"
               },
               {
                 title: "Testing & Calibration",
                 desc: "NABL accredited calibration and environmental testing for aerospace & automotive.",
-                bg: "https://images.unsplash.com/photo-1581092162387-4c4e6a0d0e6e?auto=format&fit=crop&q=80&w=800"
+                bg: "https://unitestcalibration.com/wp-content/uploads/2024/06/calibration-and-testing.jpg"
               },
               {
                 title: "Skill Innovation Labs",
                 desc: "Advanced hands-on labs for PLC, IIoT, robotics & Industry 4.0 technologies.",
-                bg: "https://images.unsplash.com/photo-1581093458795-9d1c0e8d9e6f?auto=format&fit=crop&q=80&w=800"
+                bg: "https://ezyschooling.com/_next/image?url=https%3A%2F%2Fd3bat55ebwjhsf.cloudfront.net%2Fexpert-article%2Fuser_priyanshu2255suman%2540gmail.comKumar%2FSwarnprastha_Public_School_March_2026.png&w=1920&q=60"
               },
               {
                 title: "Research & Innovation",
                 desc: "Industry-academia collaboration in smart manufacturing & emerging technologies.",
-                bg: "https://images.unsplash.com/photo-1581092160560-7d4a0d8a6d5e?auto=format&fit=crop&q=80&w=800"
+                bg: "https://www.iimtindia.net/images/research-and-innovation-cell.jpg"
               }
             ].map((item, i) => (
               <div

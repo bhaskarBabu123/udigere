@@ -23,19 +23,19 @@ const Innovation = () => {
       title: "Digital Twin Technologies",
       description: "Creation of virtual replicas of physical systems for simulation, real-time monitoring, performance optimization, predictive analytics, and scenario testing.",
       tags: ["Digital Twin", "Simulation"],
-      bg: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1200"
+      bg: "https://www.sas.com/en_in/insights/articles/analytics/understanding-digital-twin-technology/_jcr_content/par/styledcontainer/par/image.img.jpg/1759226315233.jpg"
     },
     {
       title: "Robotics & Automation",
       description: "Research into advanced robotics, collaborative cobots, intelligent automation platforms, autonomous systems, and material handling solutions for modern factories.",
       tags: ["Robotics", "Cobots"],
-      bg: "https://images.unsplash.com/photo-1581093458793-5e1f0e8d3f3d?auto=format&fit=crop&q=80&w=1200"
+      bg: "https://baysourceglobal.com/wp-content/uploads/2024/07/shutterstock_2333009159-scaled.jpg"
     },
     {
       title: "Sustainable Manufacturing",
       description: "Solutions focused on reducing energy consumption, minimizing waste, lowering environmental impact, enabling circular economy practices, and supporting green manufacturing.",
       tags: ["Sustainability", "Green Tech"],
-      bg: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1200"
+      bg: "https://media.licdn.com/dms/image/v2/D4D12AQHL047LIBrB5g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1692617883212?e=2147483647&v=beta&t=RcBhTG05aM8TqUBbVGjRDucY0mGb-Twv7BW_kIDsEdk"
     }
   ];
 
