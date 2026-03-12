@@ -106,8 +106,8 @@ const Collaboration = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {collaborationAreas.map((area, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-blue-300">
-                <div className="text-blue-600 mb-4">{area.icon}</div>
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-green-300">
+                <div className="text-green-600 mb-4">{area.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{area.title}</h3>
                 <p className="text-gray-700 leading-relaxed">{area.description}</p>
               </div>
@@ -128,8 +128,8 @@ const Collaboration = () => {
             {benefits.map((benefit, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
                 <div className="text-center mb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    {index === 0 ? <BookOpen className="w-8 h-8 text-blue-600" /> : <Building className="w-8 h-8 text-blue-600" />}
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    {index === 0 ? <BookOpen className="w-8 h-8 text-green-600" /> : <Building className="w-8 h-8 text-green-600" />}
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900">{benefit.title}</h3>
                 </div>
@@ -137,7 +137,7 @@ const Collaboration = () => {
                 <ul className="space-y-3">
                   {benefit.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-green-600 rounded-full mt-3 mr-3 flex-shrink-0"></span>
                       <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
@@ -158,8 +158,8 @@ const Collaboration = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-blue-600">1</span>
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-green-600">1</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Initial Discussion</h3>
               <p className="text-gray-600">Understanding mutual objectives and collaboration opportunities</p>
@@ -203,11 +203,11 @@ const Collaboration = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <div className="text-center mb-4">
-                <Award className="w-12 h-12 text-blue-600 mx-auto mb-2" />
+                <Award className="w-12 h-12 text-green-600 mx-auto mb-2" />
                 <h3 className="text-lg font-semibold text-gray-900">Research Publications</h3>
               </div>
               <div className="text-center">
-                <span className="text-3xl font-bold text-blue-600">25+</span>
+                <span className="text-3xl font-bold text-green-600">25+</span>
                 <p className="text-gray-600 mt-1">Joint research papers published in international journals</p>
               </div>
             </div>

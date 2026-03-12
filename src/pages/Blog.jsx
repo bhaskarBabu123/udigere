@@ -100,13 +100,13 @@ const Blog = () => {
               <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="p-8">
                   <div className="flex items-center mb-4">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full mr-4">
+                    <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full mr-4">
                       {blogPosts[0].category}
                     </span>
                     <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Featured</span>
                   </div>
                   
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 hover:text-blue-600 transition-colors cursor-pointer">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 hover:text-green-600 transition-colors cursor-pointer">
                     {blogPosts[0].title}
                   </h3>
                   
@@ -120,7 +120,7 @@ const Blog = () => {
                       <span>{new Date(blogPosts[0].date).toLocaleDateString()}</span>
                     </div>
                     
-                    <button className="text-blue-600 hover:text-blue-800 font-medium flex items-center transition-colors">
+                    <button className="text-green-600 hover:text-green-800 font-medium flex items-center transition-colors">
                       Read More
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </button>
@@ -141,7 +141,7 @@ const Blog = () => {
                     </span>
                   </div>
                   
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-blue-600 transition-colors cursor-pointer">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-green-600 transition-colors cursor-pointer">
                     {post.title}
                   </h3>
                   
@@ -155,7 +155,7 @@ const Blog = () => {
                       <span>{new Date(post.date).toLocaleDateString()}</span>
                     </div>
                     
-                    <button className="text-blue-600 hover:text-blue-800 font-medium flex items-center text-sm transition-colors">
+                    <button className="text-green-600 hover:text-green-800 font-medium flex items-center text-sm transition-colors">
                       Read More
                       <ArrowRight className="w-3 h-3 ml-1" />
                     </button>

@@ -1,176 +1,281 @@
-import PageBanner from '../components/PageBanner';
-import FAQ from '../components/FAQ';
-import { 
-  Target, Eye, Users, Award, Cog, Wrench, Bot, Monitor, 
-  Settings, Shield, Factory, CheckCircle2, Rocket, Zap 
+import { Link } from 'react-router-dom';
+import {
+  ArrowRight, Cog, Factory, Wrench, ShieldCheck, TestTube, GraduationCap,
+  Award, MapPin, Clock, CheckCircle2
 } from 'lucide-react';
+import FAQ from '../components/FAQ';
 
 const About = () => {
-  const expertise = [
-    { icon: <Cog />, title: "Industrial Automation", desc: "Complete automation solutions for manufacturing processes." },
-    { icon: <Bot />, title: "Robotics", desc: "Industrial robotics integration and precision programming." },
-    { icon: <Wrench />, title: "Mechatronics", desc: "Mechanical, electrical, and software system integration." },
-    { icon: <Monitor />, title: "PLC & SCADA", desc: "Supervisory control and data acquisition systems." },
-    { icon: <Settings />, title: "Instrumentation", desc: "Precision industrial measurement and control systems." },
-    { icon: <Factory />, title: "AI in Manufacturing", desc: "Artificial intelligence applications for production lines." },
-    { icon: <Shield />, title: "Cyber Security", desc: "Protection of mission-critical industrial control systems." },
-    { icon: <Rocket />, title: "Smart Factory", desc: "Intelligent manufacturing systems with digital twins." }
+  const stats = [
+    { label: "Years of Combined Expertise", value: "20+" },
+    { label: "Projects & Consultancies", value: "150+" },
+    { label: "Industries & MSMEs Served", value: "100+" },
+    { label: "Professionals & Students Trained", value: "5000+" }
+  ];
+
+  const coreExpertise = [
+    {
+      title: "Industrial Automation",
+      desc: "PLC, SCADA, HMI, VFD, Drives, Instrumentation & Robotics Integration",
+      bg: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+      title: "Industry 4.0 / 5.0 Transformation",
+      desc: "IIoT, Cyber Physical Systems, Smart Manufacturing & Digital Twins",
+      bg: "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+      title: "MSME Digitization & ZED Consulting",
+      desc: "Lean Manufacturing, Zero Defect Zero Effect, Digital Tools & Productivity Improvement",
+      bg: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+      title: "Quality Systems & ISO Consulting",
+      desc: "ISO 9001, 14001, 45001 Implementation, Auditing & Certification Support",
+      bg: "https://images.unsplash.com/photo-1581092162387-4c423ca9c7d5?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+      title: "Testing & Calibration Services",
+      desc: "NABL Accredited Calibration & Environmental Testing (Vibration, Shock, Thermal)",
+      bg: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+      title: "Advanced Skill Innovation Labs",
+      desc: "Hands-on training in Automation, Robotics, IIoT, CNC, AI for ITI to Engineering",
+      bg: "https://images.unsplash.com/photo-1581093458793-5e1f0e8d3f3d?auto=format&fit=crop&q=80&w=1200"
+    }
   ];
 
   const aboutFAQs = [
     {
-      question: "What is your experience in Industry 4.0?",
-      answer: "We have over 5 years of experience in Industry 4.0 implementations, having completed 100+ projects across aerospace, automotive, and heavy manufacturing sectors."
+      question: "What makes UDUGIRI Technologies unique?",
+      answer: "We combine industrial automation, Industry 4.0/5.0 consulting, NABL-aligned testing, MSME transformation support, and advanced skill innovation labs under one platform."
     },
     {
-      question: "Do you provide post-implementation support?",
-      answer: "Yes, we offer comprehensive AMC (Annual Maintenance) and 24/7 technical assistance to ensure your smart factory never stops."
+      question: "Who leads UDUGIRI Technologies?",
+      answer: "Dr. Shivanna D M — experienced professional with deep expertise in industrial automation, lean manufacturing, quality systems, MSME development, Industry 4.0 technologies, and advanced skill development."
+    },
+    {
+      question: "What is your focus for MSMEs?",
+      answer: "Specialized consulting in Lean Manufacturing, ZED Certification, digitization, ERP integration, IIoT adoption, productivity & quality improvement — aligned with Make in India, Digital India, Atmanirbhar Bharat."
+    },
+    {
+      question: "Do you provide testing and calibration services?",
+      answer: "Yes — NABL-accredited calibration for electrical, mechanical, temperature, pressure & flow instruments, plus planned environmental testing facilities for aerospace, automotive & defense (vibration, shock, thermal, humidity, corrosion)."
+    },
+    {
+      question: "What skill development programs do you offer?",
+      answer: "Advanced Skill Innovation Labs with hands-on training in PLC, SCADA, VFD, IIoT, Robotics, AI, CNC Simulation, Cyber Physical Systems — for ITI, Diploma, Engineering students, faculty, and industry professionals."
+    },
+    {
+      question: "Where is UDUGIRI Technologies located?",
+      answer: "#109/2, 4th Cross, Ashwathnagar, RMV 2nd Stage, Sanjayanagar, Bangalore – 560094, Karnataka, India."
     }
   ];
 
   return (
-    <div className="bg-[#fafafa] text-slate-900 overflow-x-hidden">
-      {/* --- HERO BANNER --- */}
-      <section className="relative py-32 bg-slate-950 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=2000" 
-            className="w-full h-full object-cover opacity-30 grayscale"
-            alt="Industrial Background"
+    <div className="w-full bg-slate-50 text-slate-900 min-h-screen">
+
+      {/* Hero Banner */}
+      <section className="relative py-20 md:py-28 px-6 bg-slate-950 text-white">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=2000"
+            alt="Engineering & Technology Excellence"
+            className="w-full h-full object-cover opacity-25"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-slate-950/80"></div>
         </div>
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter">
-              Engineering the <br />
-              <span className="text-emerald-400">Next Industrial Age.</span>
-            </h1>
-            <p className="text-xl text-slate-400 font-medium leading-relaxed">
-              We bridge the gap between legacy machinery and autonomous intelligence, 
-              helping global industries transition to Industry 4.0 and 5.0 seamlessly.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* --- VISION & MISSION (ASIMMETRIC) --- */}
-      <section className="py-24 container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="relative">
-            <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1531266752426-aad472b7bdf4?auto=format&fit=crop&q=80&w=1000" 
-                alt="Innovation" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            {/* Floating Card */}
-            <div className="absolute -bottom-10 -right-6 bg-emerald-500 p-8 rounded-3xl shadow-xl hidden md:block max-w-xs">
-              <Zap className="w-10 h-10 text-slate-950 mb-4" />
-              <p className="font-bold text-slate-950 text-lg italic">"Turning data into industrial power."</p>
-            </div>
+        <div className="relative z-10 max-w-5xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-indigo-900/30 border border-indigo-700/40 rounded-full text-indigo-300 text-xs font-medium uppercase tracking-wide mb-6">
+            Bangalore-based Technology & Skill Leader
           </div>
 
-          <div className="space-y-12">
-            <div>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="h-px w-12 bg-emerald-500"></div>
-                <span className="text-xs font-black uppercase tracking-[0.3em] text-emerald-600">Our Purpose</span>
-              </div>
-              <h2 className="text-4xl font-bold mb-6 tracking-tight">To Lead, Not Just Follow.</h2>
-              <p className="text-lg text-slate-600 font-medium leading-relaxed mb-6">
-                Our vision is to become the definitive global partner for smart transformation, 
-                redefining how humans and machines collaborate in the Industry 5.0 era.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {["MSME Empowerment", "Smart Automation", "R&D Excellence", "Future-Ready Skills"].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <CheckCircle2 className="text-emerald-500 w-5 h-5" />
-                    <span className="font-bold text-slate-700">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-6">
+            Building India's Future-Ready Industry & Workforce
+          </h1>
+
+          <p className="text-base md:text-lg text-slate-300 max-w-3xl mx-auto mb-10">
+            UDUGIRI Technologies provides industrial automation, smart manufacturing consulting, MSME transformation, precision testing & calibration, and advanced skill development programs.
+          </p>
         </div>
       </section>
 
-      {/* --- EXPERTISE GRID --- */}
-      <section className="py-24 bg-slate-950 text-white rounded-[4rem] mx-4 md:mx-8">
-        <div className="container mx-auto px-6 text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">Technical Dominance</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto font-medium">Our cross-domain expertise ensures that your digital transformation is grounded in solid engineering.</p>
-        </div>
-
-        <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {expertise.map((item, index) => (
-            <div key={index} className="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-emerald-500 transition-all duration-500">
-              <div className="text-emerald-400 group-hover:text-slate-950 mb-6 transition-colors">
-                {item.icon}
-              </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-slate-950">{item.title}</h3>
-              <p className="text-slate-400 text-sm font-medium group-hover:text-slate-950/80 leading-relaxed">
-                {item.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* --- TIMELINE SECTION --- */}
-      <section className="py-24 container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold tracking-tight">Our Journey</h2>
-        </div>
-        <div className="max-w-4xl mx-auto space-y-12">
-          {[
-            { year: "2018", title: "Inception", body: "Founded with a focus on IoT sensors for small-scale factories." },
-            { year: "2020", title: "Automation Pivot", body: "Launched our proprietary SCADA integration platform." },
-            { year: "2024", title: "Global Expansion", body: "Implemented our first AI-driven 'Dark Factory' in Bengaluru." }
-          ].map((item, i) => (
-            <div key={i} className="flex gap-8 items-start">
-              <div className="text-2xl font-black text-emerald-500 pt-1">{item.year}</div>
-              <div className="pb-8 border-b border-slate-100 flex-1">
-                <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                <p className="text-slate-600 font-medium">{item.body}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* --- CORE VALUES --- */}
-      <section className="py-24 bg-slate-50">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              { icon: <Award />, title: "Excellence", body: "We don't settle for 'working'. We aim for 'optimized'." },
-              { icon: <Users />, title: "Collaboration", body: "We treat your shop-floor challenges as our own engineering puzzles." },
-              { icon: <Target />, title: "Innovation", body: "Continuously exploring the edge of robotics and mechatronics." }
-            ].map((v, i) => (
-              <div key={i} className="text-center group">
-                <div className="w-20 h-20 bg-white shadow-xl rounded-full flex items-center justify-center mx-auto mb-8 text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-all">
-                  {v.icon}
-                </div>
-                <h3 className="text-2xl font-bold mb-4">{v.title}</h3>
-                <p className="text-slate-600 font-medium leading-relaxed">{v.body}</p>
+      {/* Stats */}
+      <section className="py-12 px-6 -mt-8">
+        <div className="max-w-6xl mx-auto bg-white rounded-xl border border-slate-200 shadow-sm p-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {stats.map((stat, i) => (
+              <div key={i} className="border-r last:border-0 border-slate-100 pr-4 last:pr-0">
+                <div className="text-3xl md:text-4xl font-semibold text-indigo-700 mb-1">{stat.value}</div>
+                <div className="text-xs uppercase tracking-wide text-slate-600 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <FAQ title="About Us - Deep Dive" faqs={aboutFAQs} />
+      {/* Company Overview */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-semibold mb-5">About UDUGIRI Technologies</h2>
+              <p className="text-base text-slate-600 mb-6 leading-relaxed">
+                An emerging engineering consulting, industrial technology solutions, testing services, and advanced skill development organization headquartered in Bangalore.
+              </p>
+              <p className="text-base text-slate-600 mb-6 leading-relaxed">
+                We bridge the gap between industry requirements and skilled workforce readiness through expertise in Industrial Automation, Industry 4.0/5.0, Cyber Physical Systems, Lean Manufacturing, Quality Management Systems, and Emerging Technologies.
+              </p>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" />
+                  <span className="text-slate-700">Support for manufacturing, MSMEs, aerospace, automotive & academic institutions</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" />
+                  <span className="text-slate-700">Multidisciplinary team from industry, academia, R&D & consulting</span>
+                </div>
+              </div>
+              <Link
+                to="/contact"
+                className="bg-indigo-700 text-white px-8 py-3.5 rounded-lg font-medium text-sm hover:bg-indigo-800 transition inline-flex items-center gap-2"
+              >
+                Connect with Our Team <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80&w=1200"
+                alt="Engineering team & innovation"
+                className="w-full h-80 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* --- FINAL CALL TO ACTION --- */}
-      <section className="py-24 px-6">
-        <div className="container mx-auto max-w-6xl bg-emerald-500 rounded-[3rem] p-12 text-center text-slate-950">
-          <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tighter">Ready to see our labs in action?</h2>
-          <button className="bg-slate-950 text-white px-12 py-5 rounded-full font-bold text-lg hover:bg-slate-800 transition-all">
-            Schedule a Facility Visit
-          </button>
+      {/* Core Expertise */}
+      <section className="py-16 px-6 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-semibold mb-3">Our Core Technical Expertise</h2>
+            <div className="w-16 h-1 bg-indigo-600 mx-auto mb-6"></div>
+            <p className="text-slate-600 max-w-3xl mx-auto text-base">
+              Multidisciplinary capabilities powering modern manufacturing and skill development
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {coreExpertise.map((item, i) => (
+              <div
+                key={i}
+                className="relative rounded-xl overflow-hidden border border-slate-200 h-72 group"
+                style={{
+                  backgroundImage: `url(${item.bg})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent/30"></div>
+                <div className="relative h-full p-6 flex flex-col justify-end">
+                  <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+                  <p className="text-slate-200 text-sm">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership & Vision */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-semibold mb-5">Leadership & Vision</h2>
+              <p className="text-base text-slate-600 mb-6 leading-relaxed">
+                Guided by <strong>Dr. Shivanna D M</strong> — seasoned expert with extensive experience in industry, academia, research, consultancy, and entrepreneurship.
+              </p>
+              <p className="text-base text-slate-600 leading-relaxed">
+                Vision: To become a leading national technology partner in industrial automation, smart manufacturing, quality systems, and advanced engineering skill development — contributing to India's manufacturing ecosystem transformation.
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
+                alt="Leadership & innovation team"
+                className="w-full h-80 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Commitment */}
+      <section className="py-16 px-6 bg-slate-950 text-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-semibold mb-4">Our Commitment</h2>
+            <p className="text-slate-300 max-w-3xl mx-auto text-base">
+              Dedicated to driving industrial growth, MSME competitiveness, quality excellence, and workforce readiness.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              "Enhancing productivity through automation & digital technologies",
+              "Supporting MSMEs in achieving global manufacturing standards",
+              "Delivering high-quality engineering consulting & testing services",
+              "Creating industry-ready professionals through advanced training",
+              "Promoting innovation via strong industry-academia collaboration",
+              "Building sustainable & future-ready manufacturing ecosystems"
+            ].map((point, i) => (
+              <div key={i} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
+                <CheckCircle2 className="w-6 h-6 text-indigo-400 mb-3" />
+                <p className="text-slate-200 text-sm">{point}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-6 bg-slate-50">
+        <div className="max-w-4xl mx-auto">
+          <FAQ title="Frequently Asked Questions" faqs={aboutFAQs} />
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 px-6 bg-white border-t border-slate-200">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-semibold mb-6">
+            Ready to Partner with UDUGIRI Technologies?
+          </h2>
+          <p className="text-slate-600 mb-8 max-w-xl mx-auto text-base">
+            Contact us for automation solutions, skill labs, training programs, testing services, or consulting projects.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
+            <Link
+              to="/contact"
+              className="bg-indigo-700 text-white px-10 py-4 rounded-lg font-medium text-base hover:bg-indigo-800 transition flex items-center justify-center gap-2 shadow-md"
+            >
+              Get in Touch <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              to="/industrial-solutions"
+              className="border-2 border-indigo-600 text-indigo-700 px-10 py-4 rounded-lg font-medium text-base hover:bg-indigo-50 transition"
+            >
+              Explore Our Expertise
+            </Link>
+          </div>
+
+          <div className="mt-10 text-sm text-slate-500">
+            UDUGIRI Technologies • #109/2, 4th Cross, Ashwathnagar, RMV 2nd Stage, Sanjayanagar, Bangalore – 560094
+          </div>
         </div>
       </section>
     </div>

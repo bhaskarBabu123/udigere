@@ -111,8 +111,8 @@ const Technologies = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {technologies.map((tech, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-blue-300">
-                <div className="text-blue-600 mb-4">{tech.icon}</div>
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-all duration-300 hover:border-green-300">
+                <div className="text-green-600 mb-4">{tech.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{tech.title}</h3>
                 <p className="text-gray-700 leading-relaxed">{tech.description}</p>
               </div>
@@ -132,8 +132,8 @@ const Technologies = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-                  <Monitor className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+                  <Monitor className="w-8 h-8 text-green-600" />
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Control Layer</h3>

@@ -1,89 +1,113 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { 
+  Mail, Phone, MapPin, Linkedin, Twitter, Facebook, 
+  Instagram, Youtube, ArrowRight 
+} from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-slate-950 text-slate-300">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="col-span-1">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-lg">N4</span>
+          <div>
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
+                <span className="text-white font-bold text-xl">U</span>
               </div>
               <div>
-                <h3 className="text-lg font-bold">UDUGIRI Industry</h3>
-                <p className="text-sm text-gray-400">4.0 / 5.0 Solutions</p>
+                <h3 className="text-xl font-bold text-white">UDUGIRI Technologies</h3>
+                <p className="text-sm text-indigo-400 font-medium">Industry 4.0 / 5.0 Solutions</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-4">
-              Empowering Smart Manufacturing & Intelligent Automation through Industry 4.0 and 5.0 transformation.
+
+            <p className="text-slate-400 mb-6 leading-relaxed">
+              Empowering Industries & Institutions through Automation, Innovation and Advanced Skill Development.
             </p>
+
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
                 <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-slate-400 hover:text-indigo-400 transition-colors">
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-300 hover:text-blue-400 transition-colors">About Us</Link></li>
-              <li><Link to="/industry" className="text-gray-300 hover:text-blue-400 transition-colors">Industry 4.0 / 5.0</Link></li>
-              <li><Link to="/technologies" className="text-gray-300 hover:text-blue-400 transition-colors">Technologies</Link></li>
-              <li><Link to="/products" className="text-gray-300 hover:text-blue-400 transition-colors">Products & Solutions</Link></li>
-              <li><Link to="/training" className="text-gray-300 hover:text-blue-400 transition-colors">Training</Link></li>
+            <h4 className="text-lg font-semibold text-white mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              <li><Link to="/" className="text-slate-400 hover:text-indigo-400 transition-colors">Home</Link></li>
+              <li><Link to="/about" className="text-slate-400 hover:text-indigo-400 transition-colors">About Us</Link></li>
+              <li><Link to="/industry" className="text-slate-400 hover:text-indigo-400 transition-colors">Industry 4.0 / 5.0</Link></li>
+              <li><Link to="/products" className="text-slate-400 hover:text-indigo-400 transition-colors">Products & Solutions</Link></li>
+              <li><Link to="/training" className="text-slate-400 hover:text-indigo-400 transition-colors">Training Programs</Link></li>
+              <li><Link to="/contact" className="text-slate-400 hover:text-indigo-400 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li><Link to="/consultancy" className="text-gray-300 hover:text-blue-400 transition-colors">Consultancy</Link></li>
-              <li><Link to="/innovation" className="text-gray-300 hover:text-blue-400 transition-colors">Innovation & IPR</Link></li>
-              <li><Link to="/labs" className="text-gray-300 hover:text-blue-400 transition-colors">Labs & Infrastructure</Link></li>
-              <li><Link to="/collaboration" className="text-gray-300 hover:text-blue-400 transition-colors">Academia Collaboration</Link></li>
-              <li><Link to="/msme" className="text-gray-300 hover:text-blue-400 transition-colors">MSME Support</Link></li>
+            <h4 className="text-lg font-semibold text-white mb-6">Services</h4>
+            <ul className="space-y-3">
+              <li><Link to="/products" className="text-slate-400 hover:text-indigo-400 transition-colors">Industrial Automation</Link></li>
+              <li><Link to="/msme" className="text-slate-400 hover:text-indigo-400 transition-colors">MSME Consulting & ZED</Link></li>
+              <li><Link to="/labs" className="text-slate-400 hover:text-indigo-400 transition-colors">Skill Innovation Labs</Link></li>
+              <li><Link to="/consultancy" className="text-slate-400 hover:text-indigo-400 transition-colors">Consultancy Services</Link></li>
+              <li><Link to="/innovation" className="text-slate-400 hover:text-indigo-400 transition-colors">Research & Innovation</Link></li>
+              <li><Link to="/testing-calibration" className="text-slate-400 hover:text-indigo-400 transition-colors">Testing & Calibration</Link></li>
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact & Address */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <MapPin className="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" />
-                <p className="text-gray-300 text-sm">
-                  Tech Park, Innovation Hub<br />
-                  Bangalore, Karnataka - 560001
+            <h4 className="text-lg font-semibold text-white mb-6">Get in Touch</h4>
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <MapPin className="w-5 h-5 text-indigo-400 mr-3 mt-1 flex-shrink-0" />
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  #109/2, 4th Cross,<br />
+                  Ashwathnagar, RMV 2nd Stage,<br />
+                  Sanjayanagar, Bangalore – 560094<br />
+                  Karnataka, India
                 </p>
               </div>
               <div className="flex items-center">
-                <Phone className="w-5 h-5 text-blue-400 mr-3" />
-                <p className="text-gray-300">+91 9876543210</p>
+                <Phone className="w-5 h-5 text-indigo-400 mr-3" />
+                <a href="tel:+919876543210" className="text-slate-400 hover:text-indigo-400 transition-colors">
+                  +91 98765 43210
+                </a>
               </div>
               <div className="flex items-center">
-                <Mail className="w-5 h-5 text-blue-400 mr-3" />
-                <p className="text-gray-300">info@UDUGIRIindustry.com</p>
+                <Mail className="w-5 h-5 text-indigo-400 mr-3" />
+                <a href="mailto:info@udugiritech.com" className="text-slate-400 hover:text-indigo-400 transition-colors">
+                  info@udugiritech.com
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 UDUGIRI Industry 4.0 / 5.0 Solutions. All rights reserved.
+        {/* Bottom Bar */}
+        <div className="mt-16 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
+          <p>
+            © {new Date().getFullYear()} UDUGIRI Technologies. All rights reserved.
           </p>
+          {/* <div className="mt-2 flex justify-center gap-6">
+            <Link to="/privacy" className="hover:text-indigo-400 transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-indigo-400 transition-colors">Terms of Service</Link>
+          </div> */}
         </div>
       </div>
     </footer>

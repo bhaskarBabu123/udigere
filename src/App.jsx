@@ -16,6 +16,9 @@ import MSME from './pages/MSME';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import './index.css';
+import ClientsPartners from './pages/ClientsPartners';
+import NewsEvents from './pages/NewsEvents';
+import Careers from './pages/Careers';
 
 function App() {
   return (
@@ -33,10 +36,13 @@ function App() {
             <Route path="/consultancy" element={<Consultancy />} />
             <Route path="/innovation" element={<Innovation />} />
             <Route path="/training" element={<Training />} />
+            <Route path="/clients" element={<ClientsPartners />} />
+            <Route path="/blogs" element={<NewsEvents />} />
             <Route path="/collaboration" element={<Collaboration />} />
             <Route path="/students" element={<Students />} />
             <Route path="/msme" element={<MSME />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
