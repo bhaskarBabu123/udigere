@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
+
 const FAQ = ({ title = "Frequently Asked Questions", faqs = [] }) => {
   const [openIndex, setOpenIndex] = useState(null);
 

@@ -4,6 +4,7 @@ import {
   Award, MapPin, Clock, CheckCircle2
 } from 'lucide-react';
 import FAQ from '../components/FAQ';
+import Logo from '../components/Logo';
 
 const About = () => {
   const stats = [
@@ -88,6 +89,10 @@ const About = () => {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
+          <center>
+            <Logo w={120}/>
+            <br /><br />
+          </center>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-indigo-900/30 border border-indigo-700/40 rounded-full text-indigo-300 text-xs font-medium uppercase tracking-wide mb-6">
             Bangalore-based Technology & Skill Leader
           </div>

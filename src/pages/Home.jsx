@@ -41,7 +41,7 @@ const Home = () => {
       {/* =========================================
           1. HERO SECTION - Strong visual opening
       ========================================= */}
-      <section className="relative min-h-[80vh] flex items-center bg-slate-950 text-white px-6 py-20 md:py-28">
+      <section className="relative min-h-[100vh] flex items-center bg-slate-700 text-white px-6 py-20 md:py-28">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070"
@@ -51,8 +51,8 @@ const Home = () => {
           <div className="absolute inset-0 bg-slate-950/75"></div>
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-5 py-2 bg-indigo-900/30 border border-indigo-700/40 rounded-full text-indigo-300 text-xs font-medium uppercase tracking-wide mb-8">
+        <div className="relative z-10 max-w-5xl mx-auto text-start md:text-center">
+          <div className="inline-flex items-center gap-2 px-5 py-2 bg-indigo-900/30 border border-indigo-700/40 rounded-full text-indigo-300 text-xs font-medium uppercase tracking-wide mb-3 mt-8">
             UDUGIRI Technologies
           </div>
 
@@ -73,7 +73,7 @@ const Home = () => {
             </Link>
             <Link
               to="/about"
-              className="border-2 border-indigo-600 text-indigo-300 px-9 py-4 rounded-lg font-medium text-base hover:bg-indigo-950/40 transition"
+              className="border-2 border-indigo-600 text-center text-indigo-300 px-9 py-4 rounded-lg font-medium text-base hover:bg-indigo-950/40 transition"
             >
               Learn More About Us
             </Link>

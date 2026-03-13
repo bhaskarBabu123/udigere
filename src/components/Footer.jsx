@@ -3,6 +3,7 @@ import {
   Mail, Phone, MapPin, Linkedin, Twitter, Facebook, 
   Instagram, Youtube, ArrowRight 
 } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -11,15 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
-                <span className="text-white font-bold text-xl">U</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-white">UDUGIRI Technologies</h3>
-                <p className="text-sm text-indigo-400 font-medium">Industry 4.0 / 5.0 Solutions</p>
-              </div>
-            </div>
+           <Logo w={100}/>
 
             <p className="text-slate-400 mb-6 leading-relaxed">
               Empowering Industries & Institutions through Automation, Innovation and Advanced Skill Development.

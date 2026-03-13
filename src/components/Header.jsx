@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Cpu, Activity, LayoutGrid, LucideMenu } from 'lucide-react';
+import Logo from './Logo';
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -55,13 +56,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform shadow-md">
-              <Cpu className="text-white w-6 h-6" />
-            </div>
-            <div>
-              <h1 className="text-lg font-bold text-slate-900 tracking-tight leading-none">UDUGIRI</h1>
-              <p className="text-[10px] text-indigo-600 font-bold tracking-[0.2em] uppercase">Technologies</p>
-            </div>
+            <Logo w={60}/>
           </Link>
 
           {/* Desktop Nav */}
@@ -137,15 +132,7 @@ const Header = () => {
           <div className="p-6 flex flex-col min-h-full">
             {/* Header */}
             <div className="flex justify-between items-center mb-8">
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center mr-3">
-                  <Cpu className="text-white w-6 h-6" />
-                </div>
-                <div>
-                  <h1 className="text-lg font-bold text-slate-900">UDUGIRI</h1>
-                  <p className="text-xs text-indigo-600 font-bold tracking-wider uppercase">Technologies</p>
-                </div>
-              </div>
+              <Logo w={60}/>
               <button 
                 onClick={() => setIsDrawerOpen(false)} 
                 className="p-3 text-slate-600 hover:text-indigo-700 rounded-full hover:bg-indigo-50 transition-all"
