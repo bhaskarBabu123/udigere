@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, MapPin, Award, Target, Clock } from 'lucide-react';
 import FAQ from '../components/FAQ';
+import HeroSection from '../components/HeroSection';
 
 const Home = () => {
   const heroTagline = "Empowering Industries & Institutions through Automation, Innovation and Advanced Skill Development";
@@ -41,7 +42,7 @@ const Home = () => {
       {/* =========================================
           1. HERO SECTION - Strong visual opening
       ========================================= */}
-      <section className="relative min-h-[100vh] flex items-center bg-slate-700 text-white px-6 py-20 md:py-28">
+      {/* <section className="relative min-h-[100vh] flex items-center bg-slate-700 text-white px-6 py-20 md:py-28">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070"
@@ -79,7 +80,9 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <HeroSection/>
 
       {/* =========================================
           2. Quick Stats Section
