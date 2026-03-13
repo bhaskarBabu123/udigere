@@ -121,7 +121,7 @@ const Products = () => {
               Request Quote <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              to="/about-us"
+              to="/about"
               className="border border-slate-600 text-slate-300 px-7 py-3 rounded-lg font-medium text-sm hover:bg-slate-950/40 transition"
             >
               Learn More
@@ -320,7 +320,7 @@ const Products = () => {
               Get in Touch <Zap className="w-4 h-4" />
             </Link>
             <Link
-              to="/about-us"
+              to="/about"
               className="border border-slate-600 text-slate-300 px-8 py-3.5 rounded-lg font-medium text-sm hover:bg-slate-950/40 transition"
             >
               Company Profile

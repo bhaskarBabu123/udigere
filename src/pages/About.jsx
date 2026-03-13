@@ -271,7 +271,7 @@ const About = () => {
               Get in Touch <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
-              to="/industrial-solutions"
+              to="/industry"
               className="border-2 border-indigo-600 text-indigo-700 px-10 py-4 rounded-lg font-medium text-base hover:bg-indigo-50 transition"
             >
               Explore Our Expertise
